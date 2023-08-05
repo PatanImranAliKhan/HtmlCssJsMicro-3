@@ -3,66 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Tracker</title>
+    <title>Food </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
+        <header>
+            <div id="header1">
+                <h1>Food Chart</h1>
+            </div>
+        </header>
         <header id="header">
             <div class="headercontent">
                 <div class="filterbox">
                     <div class="filterbutton">
-                        <div class="filtercontent">
+                        <div class="filtercontent" id="filter">
                             <span>Filter</span>
                             <span class="filtericon"><i class="fa fa-filter"></i></span>
                         </div>
                     </div>
-                    <div class="checkboxes">
-                        <label>
-                            <input type="checkbox">
+                    <div class="checkboxes" id="checkboxes">
+                        <label id="checklabel"> 
+                            <input type="checkbox" id="allfood">
                             All Food Item
                         </label>
                         <label>
-                            <input type="checkbox">
+                            <input type="checkbox" id="vegetables">
                             Vegetables
                         </label>
                         <label>
-                            <input type="checkbox">
+                            <input type="checkbox" id="fruits">
                             Fruits
                         </label>
                         <label>
-                            <input type="checkbox">
+                            <input type="checkbox" id="protiens">
                             Protein
                         </label>
                         <label>
-                            <input type="checkbox">
+                            <input type="checkbox" id="nuts">
                             Nuts
                         </label>
                         <label>
-                            <input type="checkbox">
+                            <input type="checkbox" id="grains">
                             Grains
                         </label>
                         <label>
-                            <input type="checkbox">
+                            <input type="checkbox" id="dairy">
                             Dairy
                         </label>
                         <label>
-                            <input type="checkbox">
+                            <input type="checkbox" id="cal_gt100">
                             Calorie Above 100
                         </label>
                         <label>
-                            <input type="checkbox">
+                            <input type="checkbox" id="cal_lt100">
                             Calorie Below 100
                         </label>
 
                     </div>
                 </div>
                 <div class="sortbox">
-                    <select class="sort">
-                        <option value="">Sort By</option>
-                        <option value="">High to Low protien content</option>
-                        <option value="">Low to High cab content</option>
+                    <select class="sort" name="sortbox" id="sort">
+                        <option value="" hidden>Sort By</option>
+                        <option value="protienHL" class="option">High to Low protien content</option>
+                        <option value="cabLH" class="option">Low to High cab content</option>
                     </select>
                 </div>
             </div>
@@ -75,11 +80,11 @@
         <footer>
             <div>
                 <span>
-                    <a href="#header">Top</a>
+                    <!-- <a  href="#header">Top</a> -->
                 </span>
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
