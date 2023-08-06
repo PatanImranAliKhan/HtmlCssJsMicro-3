@@ -16,7 +16,7 @@
         </header>
         <header id="header">
             <div class="headercontent">
-                <div class="filterbox">
+                <div class="filterbox" id="filterbox">
                     <div class="filterbutton">
                         <div class="filtercontent" id="filter">
                             <span>Filter</span>
@@ -24,6 +24,9 @@
                         </div>
                     </div>
                     <div class="checkboxes" id="checkboxes">
+                        <div class="closeIcon">
+                            <i class="fa fa-close" id="filtercloseicon"></i>
+                        </div>
                         <label id="checklabel"> 
                             <input type="checkbox" id="allfood">
                             All Food Item
@@ -74,26 +77,97 @@
         </header>
         <main>
             <div class="content">
-                <div>
-                    <h2>Vegetables</h2>
-                    <hr>
-                    <br>
-                    <div class="cards">
-                        <div class="card">
-                            <h4>Apple</h4>
-                            <hr>
-                            <br>
-                            <div class="card-list">
-                                <b>Calorie</b>
-                                <p>95</p>
-                                <b>Protien</b>
-                                <p>0.5</p>
-                                <b>Cab</b>
-                                <p>25</p>
-                            </div>
+                <div id="allfoodcontent">
+                    <div>
+                        <h2>All Food</h2>
+                        <hr>
+                        <br>
+                        <div class="cards" id="allfoodCards">
+                            
                         </div>
                     </div>
                 </div>
+                <div id="vegetablescontent">
+                    <div>
+                        <h2>Vegetables</h2>
+                        <hr>
+                        <br>
+                        <div class="cards" id="vegetablesCards">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="fruitscontent">
+                    <div>
+                        <h2>Fruits</h2>
+                        <hr>
+                        <br>
+                        <div class="cards" id="fruitsCards">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="protienscontent">
+                    <div>
+                        <h2>Protiens</h2>
+                        <hr>
+                        <br>
+                        <div class="cards" id="protiensCards">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="nutscontent">
+                    <div>
+                        <h2>Nuts</h2>
+                        <hr>
+                        <br>
+                        <div class="cards" id="nutsCards">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="grainscontent">
+                    <div>
+                        <h2>Grains</h2>
+                        <hr>
+                        <br>
+                        <div class="cards" id="grainsCards">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="dairycontent">
+                    <div>
+                        <h2>Dairy</h2>
+                        <hr>
+                        <br>
+                        <div class="cards" id="dairyCards">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cal_gt100content">
+                    <div>
+                        <h2>Calories &gt; 100</h2>
+                        <hr>
+                        <br>
+                        <div class="cards" id="cal_gt100Cards">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="cal_lt100content">
+                    <div>
+                        <h2>Calaries &lt; 100</h2>
+                        <hr>
+                        <br>
+                        <div class="cards" id="cal_lt100Cards">
+                            
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </main>
         <footer>

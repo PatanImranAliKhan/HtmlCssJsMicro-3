@@ -62,6 +62,16 @@ body {
     justify-content: space-between;
 }
 
+.closeIcon {
+    width: 100%;
+    margin-left: 85%;
+    margin-top: 5px;
+}
+
+.closeIcon .fa {
+    font-size: 22px;
+}
+
 .checkboxes {
     background-color: lightblue;
     display: grid;
