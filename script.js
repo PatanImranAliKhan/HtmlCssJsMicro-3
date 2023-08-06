@@ -324,3 +324,10 @@ function sortByCabLowToHigh() {
   })
   dataInitiate(foodData)
 }
+
+setInterval(function() {
+  if(!allfoodCheckBox.checked && !vegetablesCheckBox.checked && !fruitsCheckBox.checked && !protiensCheckBox.checked && !nutsCheckBox.checked && 
+    !grainsCheckBox.checked && !dairyCheckBox.checked && !cal_gt100CheckBox.checked && !cal_lt100CheckBox.checked) {
+      allfoodCheckBox.click();
+    }
+}, 3000);
